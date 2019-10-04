@@ -1,0 +1,318 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{588D5C75-56B8-4D12-B79F-98D948B2CFED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pandora</RootNamespace>
+    <AssemblyName>Pandora</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44326</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.12.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.12\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="401.html" />
+    <Content Include="404.html" />
+    <Content Include="about.html" />
+    <Content Include="community.html" />
+    <Content Include="contact.html" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\pandora-financial-services.webflow.css" />
+    <Content Include="css\webflow.css" />
+    <Content Include="frequently-asked-questions.html" />
+    <Content Include="how-it-works.html" />
+    <Content Include="images\advice-advise-advisor-7096-p-1080.jpeg" />
+    <Content Include="images\advice-advise-advisor-7096-p-1600.jpeg" />
+    <Content Include="images\advice-advise-advisor-7096.jpg" />
+    <Content Include="images\aerial-architectural-design-architecture-373912-p-1080.jpeg" />
+    <Content Include="images\aerial-architectural-design-architecture-373912-p-1600.jpeg" />
+    <Content Include="images\aerial-architectural-design-architecture-373912-p-500.jpeg" />
+    <Content Include="images\aerial-architectural-design-architecture-373912-p-800.jpeg" />
+    <Content Include="images\aerial-architectural-design-architecture-373912.jpg" />
+    <Content Include="images\architectural-design-architecture-building-443383-p-1080.jpeg" />
+    <Content Include="images\architectural-design-architecture-building-443383-p-1600.jpeg" />
+    <Content Include="images\architectural-design-architecture-building-443383-p-500.jpeg" />
+    <Content Include="images\architectural-design-architecture-building-443383.jpg" />
+    <Content Include="images\architectural-design-architecture-country-home-2287310.jpg" />
+    <Content Include="images\asking-beautiful-brainstorming-1179802-p-1080.jpeg" />
+    <Content Include="images\asking-beautiful-brainstorming-1179802-p-1600.jpeg" />
+    <Content Include="images\asking-beautiful-brainstorming-1179802.jpg" />
+    <Content Include="images\B1G1.JPG" />
+    <Content Include="images\background-balance-commerce-583846.jpg" />
+    <Content Include="images\backing1-p-1080.jpeg" />
+    <Content Include="images\backing1-p-130x130q80.jpeg" />
+    <Content Include="images\backing1-p-1600.jpeg" />
+    <Content Include="images\backing1-p-2000.jpeg" />
+    <Content Include="images\backing1-p-2600.jpeg" />
+    <Content Include="images\backing1-p-500.jpeg" />
+    <Content Include="images\backing1.jpg" />
+    <Content Include="images\bag-briefcase-case-1058959.jpg" />
+    <Content Include="images\bank-2836243_1280-p-500.png" />
+    <Content Include="images\bank-2836243_1280.png" />
+    <Content Include="images\billing-machine-311746_1280-p-1080.png" />
+    <Content Include="images\billing-machine-311746_1280-p-500.png" />
+    <Content Include="images\billing-machine-311746_1280-p-800.png" />
+    <Content Include="images\billing-machine-311746_1280.png" />
+    <Content Include="images\blur-close-up-coffee-cup-405238-p-1080.jpeg" />
+    <Content Include="images\blur-close-up-coffee-cup-405238-p-1600.jpeg" />
+    <Content Include="images\blur-close-up-coffee-cup-405238.jpg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-1080.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-1600.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-2000.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-2600.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-3200.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash-p-500.jpeg" />
+    <Content Include="images\campaign-creators-gMsnXqILjp4-unsplash.jpg" />
+    <Content Include="images\candles-p-130x130q80.jpeg" />
+    <Content Include="images\candles-wider-p-1080.jpeg" />
+    <Content Include="images\candles-wider-p-130x130q80.jpeg" />
+    <Content Include="images\candles-wider-p-1600.jpeg" />
+    <Content Include="images\candles-wider-p-2000.jpeg" />
+    <Content Include="images\candles-wider-p-500.jpeg" />
+    <Content Include="images\candles-wider.jpg" />
+    <Content Include="images\candles.jpg" />
+    <Content Include="images\chick-305108_640-p-500.png" />
+    <Content Include="images\chick-305108_640.png" />
+    <Content Include="images\computer-146330_1280-p-1080.png" />
+    <Content Include="images\computer-146330_1280-p-500.png" />
+    <Content Include="images\computer-146330_1280-p-800.png" />
+    <Content Include="images\computer-146330_1280.png" />
+    <Content Include="images\courthouse-293963_1280-p-1080.png" />
+    <Content Include="images\courthouse-293963_1280-p-500.png" />
+    <Content Include="images\courthouse-293963_1280-p-800.png" />
+    <Content Include="images\courthouse-293963_1280.png" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash-p-1080.jpeg" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash-p-1600.jpeg" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash-p-2000.jpeg" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash-p-2600.jpeg" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash-p-3200.jpeg" />
+    <Content Include="images\fabian-blank-pElSkGRA2NU-unsplash.jpg" />
+    <Content Include="images\favicon.jpg" />
+    <Content Include="images\gift-1910965_1280-p-1080.png" />
+    <Content Include="images\gift-1910965_1280-p-500.png" />
+    <Content Include="images\gift-1910965_1280-p-800.png" />
+    <Content Include="images\gift-1910965_1280.png" />
+    <Content Include="images\home-146585_1280-p-1080.png" />
+    <Content Include="images\home-146585_1280-p-500.png" />
+    <Content Include="images\home-146585_1280-p-800.png" />
+    <Content Include="images\home-146585_1280.png" />
+    <Content Include="images\house-768707_1920-p-1080.jpeg" />
+    <Content Include="images\house-768707_1920-p-1600.jpeg" />
+    <Content Include="images\house-768707_1920-p-500.jpeg" />
+    <Content Include="images\house-768707_1920.jpg" />
+    <Content Include="images\human-2944064_1280-p-1080.jpeg" />
+    <Content Include="images\human-2944064_1280-p-500.jpeg" />
+    <Content Include="images\human-2944064_1280-p-800.jpeg" />
+    <Content Include="images\human-2944064_1280.jpg" />
+    <Content Include="images\icon-157360_1280-p-1080.png" />
+    <Content Include="images\icon-157360_1280-p-500.png" />
+    <Content Include="images\icon-157360_1280-p-800.png" />
+    <Content Include="images\icon-157360_1280.png" />
+    <Content Include="images\icon-3286844_1280-p-1080.png" />
+    <Content Include="images\icon-3286844_1280-p-500.png" />
+    <Content Include="images\icon-3286844_1280-p-800.png" />
+    <Content Include="images\icon-3286844_1280.png" />
+    <Content Include="images\icons8-facebook-f-60_1icons8-facebook-f-60.png" />
+    <Content Include="images\icons8-twitter-60_1icons8-twitter-60.png" />
+    <Content Include="images\image-lotion-p-1080.jpeg" />
+    <Content Include="images\image-lotion-p-130x130q80.jpeg" />
+    <Content Include="images\image-lotion-p-1600.jpeg" />
+    <Content Include="images\image-lotion-p-2000.jpeg" />
+    <Content Include="images\image-lotion.jpg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash-p-1080.jpeg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash-p-1600.jpeg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash-p-2000.jpeg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash-p-2600.jpeg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash-p-3200.jpeg" />
+    <Content Include="images\jk-gJhev0YgUcE-unsplash.jpg" />
+    <Content Include="images\kitchen-p-130x130q80.jpeg" />
+    <Content Include="images\kitchen.jpg" />
+    <Content Include="images\mathematical-3714907_1280-p-1080.png" />
+    <Content Include="images\mathematical-3714907_1280-p-500.png" />
+    <Content Include="images\mathematical-3714907_1280-p-800.png" />
+    <Content Include="images\mathematical-3714907_1280.png" />
+    <Content Include="images\money-2724241_1920-p-1080.jpeg" />
+    <Content Include="images\money-2724241_1920-p-1600.jpeg" />
+    <Content Include="images\money-2724241_1920.jpg" />
+    <Content Include="images\money-43994_1280-p-1080.png" />
+    <Content Include="images\money-43994_1280-p-500.png" />
+    <Content Include="images\money-43994_1280-p-800.png" />
+    <Content Include="images\money-43994_1280.png" />
+    <Content Include="images\pandora-logo.JPG" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash-p-1080.jpeg" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash-p-1600.jpeg" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash-p-2000.jpeg" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash-p-2600.jpeg" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash-p-3200.jpeg" />
+    <Content Include="images\priscilla-du-preez-XkKCui44iM0-unsplash.jpg" />
+    <Content Include="images\right-img-p-1080.jpeg" />
+    <Content Include="images\right-img-p-130x130q80.jpeg" />
+    <Content Include="images\right-img-p-1600.jpeg" />
+    <Content Include="images\right-img-p-2000.jpeg" />
+    <Content Include="images\right-img-p-500.jpeg" />
+    <Content Include="images\right-img.jpg" />
+    <Content Include="images\tools-312334_1280-p-1080.png" />
+    <Content Include="images\tools-312334_1280-p-500.png" />
+    <Content Include="images\tools-312334_1280-p-800.png" />
+    <Content Include="images\tools-312334_1280.png" />
+    <Content Include="images\wallet-1698135_1280-p-1080.png" />
+    <Content Include="images\wallet-1698135_1280-p-500.png" />
+    <Content Include="images\wallet-1698135_1280-p-800.png" />
+    <Content Include="images\wallet-1698135_1280.png" />
+    <Content Include="images\webclip.png" />
+    <Content Include="images\xMw3HLNMyGaKTsbpp7QFL1a5c-p-130x130q80.jpeg" />
+    <Content Include="images\xMw3HLNMyGaKTsbpp7QFL1a5c.jpeg" />
+    <Content Include="index.html" />
+    <Content Include="js\webflow.js" />
+    <Content Include="loan-calculator.html" />
+    <Content Include="models\fixed-home-loan.html" />
+    <Content Include="models\lo-doc-loan.html" />
+    <Content Include="models\non-resident-loan.html" />
+    <Content Include="models\smsf-loan.html" />
+    <Content Include="partners.html" />
+    <Content Include="privacy.html" />
+    <Content Include="projects.html" />
+    <Content Include="sell.html" />
+    <Content Include="styleguide.html" />
+    <Content Include="team.html" />
+    <Content Include="terms.html" />
+    <Content Include="contactformhandler.php" />
+    <Content Include="Web.config" />
+    <Content Include="work\project-1.html" />
+    <Content Include="work\project-2.html" />
+    <Content Include="work\project-3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\Avenir-LT-95-Black.ttf" />
+    <Content Include="fonts\AvenirLTStd-Book.otf" />
+    <Content Include="fonts\AvenirLTStd-Heavy.otf" />
+    <Content Include="fonts\AvenirLTStd-Light.otf" />
+    <Content Include="fonts\AvenirLTStd-Medium.otf" />
+    <Content Include="fonts\AvenirLTStd-Roman.otf" />
+    <Content Include="fonts\Averta-Black.otf" />
+    <Content Include="fonts\Averta-Bold.otf" />
+    <Content Include="fonts\Averta-Extrathin.otf" />
+    <Content Include="fonts\Averta-Semibold.otf" />
+    <Content Include="fonts\Averta-Thin.otf" />
+    <Content Include="fonts\Averta.otf" />
+    <Content Include="fonts\CircularStd-Black.otf" />
+    <Content Include="fonts\CircularStd-Bold.otf" />
+    <Content Include="fonts\CircularStd-Book.otf" />
+    <Content Include="fonts\CircularStd-Medium.otf" />
+    <Content Include="fonts\PlayfairDisplay-Black.ttf" />
+    <Content Include="fonts\PlayfairDisplay-Bold.ttf" />
+    <Content Include="fonts\PlayfairDisplay-Regular.ttf" />
+    <Content Include="fonts\Tiempos-Headline---Black.otf" />
+    <Content Include="fonts\Tiempos-Headline---Bold.otf" />
+    <Content Include="fonts\Tiempos-Headline---Medium.otf" />
+    <Content Include="fonts\Tiempos-Headline---Semibold.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44326/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
